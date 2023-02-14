@@ -11,7 +11,7 @@ def func1(arr, low, high):
         func1(arr, low, pi-1)
         func1(arr, pi + 1, high)
 def func2(array, start, end):
-    #optimization: p starts at a random value in the array rather than the first value
+    #optimization: p starts at a middle value in the array rather than the first value
     mid = (start + end) // 2
     p = array[mid]
     low = start + 1
